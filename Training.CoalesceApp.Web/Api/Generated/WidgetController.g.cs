@@ -1,5 +1,4 @@
 
-using Training.CoalesceApp.Web.Models;
 using IntelliTect.Coalesce;
 using IntelliTect.Coalesce.Api;
 using IntelliTect.Coalesce.Api.Behaviors;
@@ -18,6 +17,7 @@ using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Net;
 using System.Threading.Tasks;
+using Training.CoalesceApp.Web.Models;
 
 namespace Training.CoalesceApp.Web.Api
 {

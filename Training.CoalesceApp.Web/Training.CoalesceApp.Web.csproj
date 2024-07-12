@@ -9,7 +9,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="IntelliTect.Coalesce.Vue" Version="$(CoalesceVersion)" />
+    <PackageReference Include="IntelliTect.Coalesce.Vue" Version="5.0.0-ci.20240710.4" />
   </ItemGroup>
 
   <ItemGroup>
