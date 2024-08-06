@@ -12,6 +12,10 @@
   <ItemGroup>
     <PackageReference Include="IntelliTect.Coalesce.Vue" Version="5.0.0-ci.20240710.4" />
     <PackageReference Include="IntelliTect.Coalesce" Version="5.0.0-ci.20240710.4" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="8.0.7">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
   </ItemGroup>
 
   <ItemGroup>
