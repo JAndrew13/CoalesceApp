@@ -9,6 +9,10 @@ public class TriviaQuestion : EventBase
     public required string Text { get; set; }
 
     public ICollection<TriviaAnswer> Answers { get; set; } = [];
+
+    [ManyToMany(nameof(TriviaQuestionTag.TriviaTag))]
+    public ICollection<TriviaQuestionTag> Tags { get; set; } = [];
+
 }
 
 // Coalesce Notes:
