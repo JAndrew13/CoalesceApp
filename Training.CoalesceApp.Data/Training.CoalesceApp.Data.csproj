@@ -10,5 +10,6 @@
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>
     <PackageReference Include="IntelliTect.Coalesce" Version="5.0.0-ci.20240710.4" />
+    <PackageReference Include="IntelliTect.Coalesce.Vue" Version="5.0.0-ci.20240710.4" />
   </ItemGroup>
 </Project>

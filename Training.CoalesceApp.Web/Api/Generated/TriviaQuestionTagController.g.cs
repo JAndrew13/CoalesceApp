@@ -21,51 +21,51 @@ using Training.CoalesceApp.Web.Models;
 
 namespace Training.CoalesceApp.Web.Api
 {
-    [Route("api/Widget")]
+    [Route("api/TriviaQuestionTag")]
     [Authorize]
     [ServiceFilter(typeof(IApiActionFilter))]
-    public partial class WidgetController
-        : BaseApiController<Training.CoalesceApp.Data.Models.Widget, WidgetDtoGen, Training.CoalesceApp.Data.AppDbContext>
+    public partial class TriviaQuestionTagController
+        : BaseApiController<Training.CoalesceApp.Data.Models.TriviaQuestionTag, TriviaQuestionTagDtoGen, Training.CoalesceApp.Data.AppDbContext>
     {
-        public WidgetController(CrudContext<Training.CoalesceApp.Data.AppDbContext> context) : base(context)
+        public TriviaQuestionTagController(CrudContext<Training.CoalesceApp.Data.AppDbContext> context) : base(context)
         {
-            GeneratedForClassViewModel = context.ReflectionRepository.GetClassViewModel<Training.CoalesceApp.Data.Models.Widget>();
+            GeneratedForClassViewModel = context.ReflectionRepository.GetClassViewModel<Training.CoalesceApp.Data.Models.TriviaQuestionTag>();
         }
 
         [HttpGet("get/{id}")]
         [Authorize]
-        public virtual Task<ItemResult<WidgetDtoGen>> Get(
+        public virtual Task<ItemResult<TriviaQuestionTagDtoGen>> Get(
             int id,
             DataSourceParameters parameters,
-            IDataSource<Training.CoalesceApp.Data.Models.Widget> dataSource)
+            IDataSource<Training.CoalesceApp.Data.Models.TriviaQuestionTag> dataSource)
             => GetImplementation(id, parameters, dataSource);
 
         [HttpGet("list")]
         [Authorize]
-        public virtual Task<ListResult<WidgetDtoGen>> List(
+        public virtual Task<ListResult<TriviaQuestionTagDtoGen>> List(
             ListParameters parameters,
-            IDataSource<Training.CoalesceApp.Data.Models.Widget> dataSource)
+            IDataSource<Training.CoalesceApp.Data.Models.TriviaQuestionTag> dataSource)
             => ListImplementation(parameters, dataSource);
 
         [HttpGet("count")]
         [Authorize]
         public virtual Task<ItemResult<int>> Count(
             FilterParameters parameters,
-            IDataSource<Training.CoalesceApp.Data.Models.Widget> dataSource)
+            IDataSource<Training.CoalesceApp.Data.Models.TriviaQuestionTag> dataSource)
             => CountImplementation(parameters, dataSource);
 
         [HttpPost("save")]
         [Authorize]
-        public virtual Task<ItemResult<WidgetDtoGen>> Save(
-            [FromForm] WidgetDtoGen dto,
+        public virtual Task<ItemResult<TriviaQuestionTagDtoGen>> Save(
+            [FromForm] TriviaQuestionTagDtoGen dto,
             [FromQuery] DataSourceParameters parameters,
-            IDataSource<Training.CoalesceApp.Data.Models.Widget> dataSource,
-            IBehaviors<Training.CoalesceApp.Data.Models.Widget> behaviors)
+            IDataSource<Training.CoalesceApp.Data.Models.TriviaQuestionTag> dataSource,
+            IBehaviors<Training.CoalesceApp.Data.Models.TriviaQuestionTag> behaviors)
             => SaveImplementation(dto, parameters, dataSource, behaviors);
 
         [HttpPost("bulkSave")]
         [Authorize]
-        public virtual Task<ItemResult<WidgetDtoGen>> BulkSave(
+        public virtual Task<ItemResult<TriviaQuestionTagDtoGen>> BulkSave(
             [FromBody] BulkSaveRequest dto,
             [FromQuery] DataSourceParameters parameters,
             [FromServices] IDataSourceFactory dataSourceFactory,
@@ -74,10 +74,10 @@ namespace Training.CoalesceApp.Web.Api
 
         [HttpPost("delete/{id}")]
         [Authorize]
-        public virtual Task<ItemResult<WidgetDtoGen>> Delete(
+        public virtual Task<ItemResult<TriviaQuestionTagDtoGen>> Delete(
             int id,
-            IBehaviors<Training.CoalesceApp.Data.Models.Widget> behaviors,
-            IDataSource<Training.CoalesceApp.Data.Models.Widget> dataSource)
+            IBehaviors<Training.CoalesceApp.Data.Models.TriviaQuestionTag> behaviors,
+            IDataSource<Training.CoalesceApp.Data.Models.TriviaQuestionTag> dataSource)
             => DeleteImplementation(id, new DataSourceParameters(), dataSource, behaviors);
     }
 }

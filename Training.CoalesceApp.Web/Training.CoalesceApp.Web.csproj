@@ -5,11 +5,13 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\Training.CoalesceApp.Data.Test\Training.CoalesceApp.Data.Test.csproj" />
     <ProjectReference Include="..\Training.CoalesceApp.Data\Training.CoalesceApp.Data.csproj" />
   </ItemGroup>
 
   <ItemGroup>
     <PackageReference Include="IntelliTect.Coalesce.Vue" Version="5.0.0-ci.20240710.4" />
+    <PackageReference Include="IntelliTect.Coalesce" Version="5.0.0-ci.20240710.4" />
   </ItemGroup>
 
   <ItemGroup>
